@@ -1,10 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Space Travelers' Hub
-
-> This is a [Microverse](https://www.microverse.org/)'s Module 3, Week 4, React Group project. In this project, we are building a React-Redux web app with real live data from the SpaceX API. Space Travelers' Hub itself is a web application for a company that provides commercial and scientific space travel services. The application allow users to book rockets and join selected space missions.
-
-
+## Covid check cases
+In this branch I performed the whole the project fetching data from API, displaying on screen, implementing the details page for each country, implementing the search bar to allow the user to search for a specific country and see its details
 ## Built With
 
 - React
@@ -50,11 +47,7 @@ command to get all necessary installations.
 - Twitter: [@asia_magana](https://twitter.com/asia_magana)
 - LinkedIn: [Asia Magana](https://www.linkedin.com/in/asia-magana-60b451200/)
 
-👤 **Jauhari Alafi**
 
-- GitHub: [@JauJau088](https://github.com/JauJau088)
-- Twitter: [@jaujauj](https://twitter.com/jaujauj)
-- LinkedIn: [Jauhari Alafi](https://linkedin.com/in/jauhari-alafi/)
 
 ## 🤝 Contributing
 
