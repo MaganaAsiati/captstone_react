@@ -1,15 +1,12 @@
-// import { createStore, applyMiddleware, combineReducers } from 'redux';
-// import logger from 'redux-logger';
-// import thunk from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
+import casesReducer from './Cases/cases';
+import detailReducer from './countries/countries';
 
-// //import rocketsReducer from './Rockets/rocket';
-// //import missionsReducer from './missions/missions';
+const store = configureStore({
+  reducer: {
+    covid: casesReducer,
+    details: detailReducer,
+  },
+});
 
-// const reducer = combineReducers({
-//   rockets: rocketsReducer,
-//   missionsReducer,
-// });
-
-// const store = createStore(reducer, applyMiddleware(thunk, logger));
-
-// export default store;
+export default store;
