@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import './search.css';
 
-export default function SearchBar({ handleOnChange, value }) {
+function SearchBar({ handleOnChange, value }) {
   return (
     <div className="searbar">
       <form>
@@ -22,3 +22,5 @@ SearchBar.propTypes = {
   handleOnChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
 };
+
+export default SearchBar;
