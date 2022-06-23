@@ -12,7 +12,7 @@ In this branch I performed the whole the project fetching data from API, display
 
 ## Live Demo
 
-🔥 [Link](https://astonishing-bavarois-e474ab.netlify.app) 🔥
+🔥 [Link](https://hilarious-croissant-7ac7d2.netlify.app) 🔥
 
 ## Getting Started
 
