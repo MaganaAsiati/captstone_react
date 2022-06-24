@@ -14,20 +14,22 @@ export const countryInfo = createAsyncThunk(
       country_flag: covidCases.countryInfo.flag,
       country_death: covidCases.deaths,
       country_continent: covidCases.continent,
+      country_population: covidCases.population,
+      country_critical: covidCases.critical,
+      country_tests: covidCases.tests,
+      country_updated: covidCases.updated,
     };
     return fetchCovidCases;
   },
 );
 
-export const fetchedCountryInfo = createSlice(
-  {
-    name: 'COVID19/COUNTRY_DETAILS',
-    initialState: {},
-    reducers: {},
-    extraReducers: {
-      [countryInfo.fulfilled]: (state, action) => action.payload,
-    },
+export const fetchedCountryInfo = createSlice({
+  name: 'COVID19/COUNTRY_DETAILS',
+  initialState: {},
+  reducers: {},
+  extraReducers: {
+    [countryInfo.fulfilled]: (state, action) => action.payload,
   },
-);
+});
 
 export default fetchedCountryInfo.reducer;
