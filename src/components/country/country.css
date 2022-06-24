@@ -9,10 +9,10 @@ body {
 }
 
 .country-details-container {
-  background: url("../../assets/blackmicrob.png") #ec4c8997;
+  background: url('../../assets/blackmicrob.png') #ec4c8997;
   background-size: 500px;
   width: 97%;
-  height: 97%;
+  height: 100%;
   padding: 70px;
   margin: auto;
   backdrop-filter: blur(10px);
@@ -33,7 +33,6 @@ body {
 }
 
 .animated-icon {
-  position: absolute;
   animation-name: moving;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -44,15 +43,24 @@ body {
   margin: 10px;
   list-style-type: none;
   text-align: start;
-  background-color: #fff;
+  background-color: #ec4c89e2;
   padding: 7px;
   border-radius: 7px;
-  color: #9b0b42;
+  color: white;
+  width: 100%;
 }
 
-.country-details li {
+tr {
   font-family: monospace;
   font-size: 17px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+tr:nth-child(even) {
+  background-color: palevioletred;
 }
 
 .details {
@@ -124,22 +132,40 @@ body {
 
 @media screen and (max-width: 990px) {
   .country-details-container {
+    margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: max-content;
+    background-size: 0;
   }
 
   body {
-    width: max-content;
     box-sizing: border-box;
   }
 
   .detail-container {
-    width: max-content;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    box-shadow: none;
   }
 
-  .img-container {
-    width: max-content;
+  .country-details {
+    margin: 10px;
+    text-align: center;
+    background-color: #ec4c89e2;
+    border-radius: 7px;
+    color: white;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img-container > img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }

@@ -15,6 +15,16 @@
   margin: 10px;
 }
 
+.icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.icon-mic {
+  color: white;
+}
+
 .title {
   flex: 1;
   color: rgba(255, 255, 255, 0.866);

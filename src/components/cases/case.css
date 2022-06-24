@@ -10,17 +10,17 @@
 }
 
 .searbar {
-  padding: 20px;
+  padding: 100px;
+  background-image: url('https://mapsvg.com/static/maps/geo-calibrated/world.svg');
 }
 
 .country-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
 }
 
 .country {
-  padding: 40px;
+  padding: 20px;
   list-style-type: none;
   background-color: #ec4c8a;
   color: rgba(255, 255, 255, 0.866);
@@ -46,9 +46,12 @@
 
 @media only screen and (max-width: 990px) {
   .country-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
+  }
+
+  .country-image > img {
+    width: 70px;
   }
 }

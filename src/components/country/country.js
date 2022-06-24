@@ -30,25 +30,37 @@ export default function Info() {
           <img src={countryDetails.country_flag} alt="country-flag" />
         </div>
         <h2>{countryDetails.country_name}</h2>
-        <ul className="country-details">
-          <li>
-            The country covid19 cases are :
-            {' '}
+        <table className="country-details">
+          <tr>
+            Cases
             <span className="details">{countryDetails.country_cases}</span>
-          </li>
-          <li>
-            The country number of deaths :
-            {' '}
+          </tr>
+          <tr>
+            Deaths
             <span className="details">{countryDetails.country_death}</span>
-          </li>
-          <li>
-            The country belongs to
-            {' '}
+          </tr>
+          <tr>
+            Tests
+            <span className="details">{countryDetails.country_tests}</span>
+          </tr>
+
+          <tr>
+            Updated
+            <span className="details">{countryDetails.country_updated}</span>
+          </tr>
+          <tr>
+            Critical cases
+            <span className="details">{countryDetails.country_critical}</span>
+          </tr>
+          <tr>
+            Population
+            <span className="details">{countryDetails.country_population}</span>
+          </tr>
+          <tr>
+            Continent
             <span className="details">{countryDetails.country_continent}</span>
-            {' '}
-            continent
-          </li>
-        </ul>
+          </tr>
+        </table>
         <div className="animated-icon">
           <img src={microbe} width={50} height={50} alt="microbe-icon" />
         </div>
