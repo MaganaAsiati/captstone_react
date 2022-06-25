@@ -11,7 +11,7 @@ function SearchBar({ handleOnChange, value }) {
           value={value}
           type="search"
           onChange={handleOnChange}
-          placeholder="search a country..."
+          placeholder="search............"
         />
       </form>
     </div>
