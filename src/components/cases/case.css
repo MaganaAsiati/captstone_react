@@ -28,15 +28,10 @@
 
 .country:hover {
   cursor: pointer;
-  background-color: #ec4c89e2;
 }
 
 .country:nth-child(odd) {
   background-color: #ce4176;
-}
-
-.country:nth-child(odd):hover {
-  background-color: #ce4177e8;
 }
 
 .back-img {
@@ -53,5 +48,14 @@
 
   .country-image > img {
     width: 70px;
+  }
+
+  .country:nth-child(odd) {
+    background-color: #ec4c8a;
+  }
+
+  .country:nth-child(4n + 2),
+  .country:nth-child(4n + 3) {
+    background-color: #ce4176;
   }
 }
