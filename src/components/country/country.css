@@ -239,3 +239,57 @@ body {
     gap: 10px;
   }
 }
+
+@media screen and (max-width: 740px) {
+  body {
+    width: 100%;
+  }
+
+  .country-details-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 0;
+    width: 100%;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  .detail-container {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .country-details {
+    margin: 0;
+    padding-top: 8%;
+    text-align: center;
+    background-color: #ec4c89e2;
+    border-radius: 7px;
+    color: white;
+    width: 100%;
+  }
+
+  .img-container > img {
+    display: flex;
+    margin: 4% auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .img-container {
+    padding-top: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}

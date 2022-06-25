@@ -40,3 +40,15 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .links a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .links a {
+    width: 100%;
+  }
+}

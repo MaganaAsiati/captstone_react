@@ -80,3 +80,24 @@
     background-color: #ce4176;
   }
 }
+
+@media only screen and (max-width: 740px) {
+  .country-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
+  }
+
+  .country-image > img {
+    width: 70px;
+  }
+
+  .country:nth-child(odd) {
+    background-color: #ec4c8a;
+  }
+
+  .country:nth-child(4n + 2),
+  .country:nth-child(4n + 3) {
+    background-color: #ce4176;
+  }
+}
