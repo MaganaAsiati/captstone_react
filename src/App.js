@@ -1,29 +1,20 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { Routes, Route } from 'react-router-dom';
-import { fetchMissions } from './Redux/missions/missions';
-import Navbar from './components/Navbar/Navbar';
-import Rockets from './components/Rockets/Rockets';
-import Missions from './components/Missions/Missions';
-import Profile from './components/Profile/Profile';
-import Error from './components/Error/Error';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/cases/case';
+import Info from './components/country/country';
+import Nav from './components/Nav/nav';
 
 function App() {
-  const dispatch = useDispatch();
-  // Call dispatch fetch only once on mount
-  useEffect(() => dispatch(fetchMissions()), []);
-
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Rockets />} />
-        <Route path="/rockets" element={<Rockets />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/my-profile" element={<Profile />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-    </>
+    <Router>
+      <Nav />
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Info/:countryId" element={<Info />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
