@@ -17,50 +17,50 @@ export default function Info() {
   return (
     <div className="country-details-container">
       <div className="detail-container">
-        <Link to="/">
-          <img
-            className="back-left-img"
-            src={leftArrow}
-            width={30}
-            height={30}
-            alt="leftarrow"
-          />
-        </Link>
         <div className="img-container">
+          <Link to="/">
+            <img
+              className="back-left-img"
+              src={leftArrow}
+              width={30}
+              height={30}
+              alt="leftarrow"
+            />
+          </Link>
           <img src={countryDetails.country_flag} alt="country-flag" />
         </div>
         <h2>{countryDetails.country_name}</h2>
-        <table className="country-details">
-          <tr>
+        <ul className="country-details">
+          <li>
             Cases
             <span className="details">{countryDetails.country_cases}</span>
-          </tr>
-          <tr>
+          </li>
+          <li>
             Deaths
             <span className="details">{countryDetails.country_death}</span>
-          </tr>
-          <tr>
-            Tests
+          </li>
+          <li>
+            <span> Tests</span>
             <span className="details">{countryDetails.country_tests}</span>
-          </tr>
+          </li>
 
-          <tr>
+          <li>
             Updated
             <span className="details">{countryDetails.country_updated}</span>
-          </tr>
-          <tr>
-            Critical cases
+          </li>
+          <li>
+            <span>Critical cases</span>
             <span className="details">{countryDetails.country_critical}</span>
-          </tr>
-          <tr>
+          </li>
+          <li>
             Population
             <span className="details">{countryDetails.country_population}</span>
-          </tr>
-          <tr>
+          </li>
+          <li>
             Continent
             <span className="details">{countryDetails.country_continent}</span>
-          </tr>
-        </table>
+          </li>
+        </ul>
         <div className="animated-icon">
           <img src={microbe} width={50} height={50} alt="microbe-icon" />
         </div>
